@@ -1,0 +1,81 @@
+header {
+    /* Sets background to blue. */
+    background-color: #0B1C51;
+    /*
+        Adds 50px space under the header so that main content is
+        separated by space from the navigation menu.
+    */
+    margin-bottom: 50px;
+}
+
+header h1 {
+    /* Sets the text color to white */
+    color: #ffffff;
+    /* Centers the text. */
+    text-align: center;
+    /* Removes the default margin and spacing around 'h1' element. */
+    margin: 0;
+    /* Pushes the text down 10px from the top of the page. */
+    padding-top: 10px;
+    /* Sets font size to bigger 48px. */
+    font-size: 52px;
+}
+
+header nav {
+    /* Changes the display property from default 'block' to 'flex'. */
+    display: flex;
+    /* Centers the element defined as 'display: flex'. */
+    justify-content: center;
+}
+
+header nav ul {
+    /* Changes the display property from default 'block' to 'flex'. */
+    display: flex;
+    /* Removes default padding to the left of the unordered list. */
+    padding-left: 0;
+    /* Removes bullet points from the list items within the unordered list. */
+    list-style: none;
+}
+
+header nav ul li a {
+    /* Set the link color to white. */
+    color: #ffffff;
+    /* Removes the underline from each link. */
+    text-decoration: none;
+    /* Set font to a sans-serif style font. */
+    font-family: Montserrat;
+    /* Set font size of each link to 20px. */
+    font-size: 20px;
+    margin: 0 25px 0 0;
+}
+
+header nav ul li:last-child a {
+    /*
+        Remove margin to the right of the last item so that the
+        entire list of links is centered.
+    */
+    margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+    header {
+    /* Changes the default setting from 'block' to 'flex'. */
+        display: flex;
+        /* Push the items to the far sides of the browser, with space. */
+        justify-content: space-between;
+        /* Add padding left and right with 0px padding top and bottom. */
+        padding: 0 25px;
+    }
+    header h1 {
+        /* Sets 14px margin above and below 'h1' and 0px on each side. */
+        margin: 14px 0;
+        /* Removes the padding above 'h1'. */
+        padding-top: 0;
+        /* Set fontsize to 48px. */
+        font-size: 48px;
+    }
+    header nav {
+        /* Centers the links between the top and bottom of the nav. */
+        align-items: center;
+    }
+}
